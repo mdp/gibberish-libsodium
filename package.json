@@ -1,0 +1,25 @@
+{
+  "name": "gibberish-libsodium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test/test.js"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "libsodium-wrappers": "global:sodium"
+  },
+  "author": "Mark Percival <m@mdp.im>",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^10.2.4",
+    "browserify-shim": "^3.8.8",
+    "chai": "^3.0.0",
+    "mocha": "^2.2.5"
+  }
+}
