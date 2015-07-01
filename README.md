@@ -1,7 +1,7 @@
 ## Gibberish-LibSodium
 
 This is a simple example of how to use LibSodium to encrypt data with a key. This will work in both
-the browser and Node/io.js
+the browser and Node/io.js - See the example code (here)[https://github.com/mdp/gibberish-libsodium/blob/master/index.js]
 
 #### Advantage of using LibSodium
 
@@ -9,16 +9,8 @@ the browser and Node/io.js
 - Encryption function is authenticated
 - LibSodium is well maintained at the moment and gaining traction
 
-### Installation/Setup
+### Devlopment Setup
 
     git clone repo
     cd repo
     make
-
-### Using it in the browser
-
-    <script src="../dist/gibberish-libsodium.js"> </script>
-    <script>
-      var encrypted = window.gibberish.enc("secret message", "password");
-      console.log(gibberish.dec(encrypted, "password")
-    </script>
